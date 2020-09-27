@@ -1,25 +1,27 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
 
+import Box from '@material-ui/core/Box'
+import Fab from '@material-ui/core/Fab';
+import AddIcon from '@material-ui/icons/Add';
+
+import SignIn1 from './components/SignIn1'
+
 function App() {
+
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+
+    <Box 
+      display="flex"
+      justifyContent="center"
+      alignItems="center"
+      height="100%"
+      >
+        <SignIn1 />
+      
+      
+    </Box>
   );
 }
 
